@@ -42,3 +42,8 @@ Once you've completed your project, deploy it using GitHub Pages:
 - The final deployed version must be accessible via GitHub Pages.
 
 Happy coding and good luck! 🚀
+
+## 👨‍💻 Authors
+- **[Martynas Kašelionis](https://github.com/martynasIN)** - Main contributor  
+
+
