@@ -8,7 +8,10 @@
     --heading_weight: 700;
     --heading_weight_sm: 600;
     --para: 16px;
+    --nav-link: 17px;
     --card-para: #5E6282;
+    --section-heading: #181e4b;
+    --play: #686d77;
 }
 
 *{
@@ -24,6 +27,7 @@
 
 h3{
     font-size: var(--heading-md);
+    color: var(--section-heading);
 }
 
 h4{
@@ -32,4 +36,10 @@ h4{
 
 h5{
     font-size: var(--heading-xs);
+    color: var(--card-para);
+}
+
+h6{
+    font-size: var(--para);
+    font-weight: var(--heading_weight);
 }

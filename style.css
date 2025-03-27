@@ -1,9 +1,30 @@
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 2em 0;
+    gap: 2em;
+}
+
+main > * {
+    z-index: 100;
+}
+
+main > svg{
+    position: absolute;
+    right: 0;
+    overflow:visible;
+    z-index: 50;
+}
+
+
 /* ****************************** */
 /* *********** Header *********** */
 /* ****************************** */
 header {
     display: flex;
     justify-content: space-between;
+    padding: 2em 0;
 }
 
 /* ****************************** */
@@ -14,7 +35,8 @@ nav {
     flex: 1;
     justify-content: end;
     align-items: center;
-    gap: 2em;
+    gap: 3em;
+    font-size: var(--nav-link);
 }
 .nav-link {
     color: black;
@@ -22,6 +44,8 @@ nav {
 
 .link__signup {
     border: 1px solid black;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
 }
 
 /* ****************************** */
@@ -35,7 +59,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 1em;
 }
 
 .hero-heading-lg,
@@ -45,37 +69,57 @@ nav {
 
 .hero-heading-sm {
     text-transform: uppercase;
+    color: var(--play_btn);
 }
 
 .hero-heading-lg {
     font-size: var(--heading-lg);
     font-weight: var(--heading_weight);
+    line-height: 86px;
 }
 
 .hero-text {
     font-size: var(--para);
+    line-height: 30px;
+    max-width: 477px;
+    font-size: var(--para);
+    color: var(--card-para);
 }
 
 .hero-buttons {
     display: flex;
+    gap: 1em;
 }
 
 .link__findout {
     color: white;
     border: 0px transparent solid;
     background-color: var(--findout_btn);
-    padding: 10px;
+    padding: 1em 2em;
+    border-radius: 0.5em;
 }
 
 .hero-buttons .__play {
     display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    gap: 1em;
 }
 
 .link__play {
     background-color: var(--play_btn);
     color: white;
     border-radius: 50%;
-    padding: 10px;
+    padding: 1em 1.2em;
+}
+
+.hero-buttons .__play {
+    color: var(--play);
+    font-size: var(--nav-link);
+}
+
+.hero-img-container{
+    position: relative;
 }
 /* Hero img */
 .hero img {
@@ -86,35 +130,35 @@ nav {
 /* ****************************** */
 /* ********** services ********** */
 /* ****************************** */
-.services{
+.services {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     gap: 2em;
 }
 
-.services-headings{
+.services-headings {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.services-headings h5{
+.services-headings h5 {
     text-transform: uppercase;
 }
 
-.services-headings h3{
+.services-headings h3 {
     text-transform: capitalize;
 }
 
 /* Services cards  */
 
-.services-content{
+.services-content {
     display: flex;
     gap: 2em;
 }
 
-.service-card{
+.service-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,7 +167,7 @@ nav {
     height: 314px;
 }
 
-.service-card p{
+.service-card p {
     font-size: var(--para);
     width: 181px;
     text-align: center;
@@ -132,29 +176,29 @@ nav {
 .services-content .weather > div,
 .services-content .flights > div,
 .services-content .events > div,
-.services-content .customize > div{
+.services-content .customize > div {
     width: 167px;
     height: 153.33px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.services-content .weather svg{
+.services-content .weather svg {
     width: 92px;
     height: 78px;
 }
 
-.services-content .flights svg{
+.services-content .flights svg {
     width: 167px;
     height: 153.33px;
 }
 
-.services-content .events img{
+.services-content .events img {
     width: 67px;
     height: 75px;
 }
 
-.services-content .customize svg{
+.services-content .customize svg {
     width: 77px;
     height: 66px;
 }
@@ -163,32 +207,40 @@ nav {
 /* ********* Destinations ******* */
 /* ****************************** */
 
-.destinations{
-    padding: 2em 0;
+.destinations {
+    height: 617px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
-.destinations-headings{
+
+.destinations-headings {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.destinations-content{
+.destinations-headings h3 {
+    text-transform: capitalize;
+}
+
+.destinations-content {
     display: flex;
     justify-content: space-evenly;
 }
 
-.destination-card{
+.destination-card {
     width: 315px;
     height: 457px;
     position: relative;
 }
 
-.destination-card img{
+.destination-card img {
     width: 100%;
     height: 100%;
 }
 
-.destination-card__text{
+.destination-card__text {
     background-color: white;
     box-shadow: 0 20px 60px gray;
     position: absolute;
@@ -203,20 +255,96 @@ nav {
     color: var(--card-para);
 }
 
-.card__text--head{
+.card__text--head {
     display: flex;
     justify-content: space-between;
 }
 
-
-.card__text--lenght{
+.card__text--lenght {
     display: flex;
 }
 
-.card__text--lenght p{
+.card__text--lenght p {
     padding-left: 10px;
 }
 
 /* ****************************** */
 /* ********* Book trip ********** */
 /* ****************************** */
+.book-trip {
+    display: flex;
+    height: 492px;
+    margin-bottom: 3em;
+    justify-content: space-evenly;
+}
+
+.book-trip-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 511px;
+}
+
+
+.book-trip-content h3 {
+    text-transform: capitalize;
+}
+
+.content-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.book-trip-card {
+    display: flex;
+    color: var(--card-para);
+    width: 395px;
+    justify-content: space-between;
+}
+
+.trip-card__text {
+    width: 327px;
+}
+
+.book-trip > svg {
+    width: 485px;
+    height: 459px;
+}
+
+/* ****************************** */
+/* ******** Testimonials ******** */
+/* ****************************** */
+
+.testimonials {
+    height: 356px;
+    padding: 0 3em 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.testimonials-content{
+    width: 409px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.testimonials__text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.testimonials-content h3 {
+    text-transform: capitalize;
+}
+
+.testimonials-content h5 {
+    text-transform: uppercase;
+}
+
+
+.content-dots{
+    display: flex;
+    gap: 1em;
+}
