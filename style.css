@@ -1,0 +1,152 @@
+/* ****************************** */
+/* *********** Header *********** */
+/* ****************************** */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ****************************** */
+/* *********** Nav ************** */
+/* ****************************** */
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+    gap: 2em;
+}
+.nav-link {
+    color: black;
+}
+
+.link__signup {
+    border: 1px solid black;
+}
+
+/* ****************************** */
+/* *********** Hero ************* */
+/* ****************************** */
+.hero {
+    display: flex;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-heading-lg,
+.hero-heading-sm {
+    font-weight: var(--heading_weight);
+}
+
+.hero-heading-sm {
+    text-transform: uppercase;
+}
+
+.hero-heading-lg {
+    font-size: var(--heading-lg);
+    font-weight: var(--heading_weight);
+}
+
+.hero-text {
+    font-size: var(--para);
+}
+
+.hero-buttons {
+    display: flex;
+}
+
+.link__findout {
+    color: white;
+    border: 0px transparent solid;
+    background-color: var(--findout_btn);
+    padding: 10px;
+}
+
+.hero-buttons .__play {
+    display: flex;
+}
+
+.link__play {
+    background-color: var(--play_btn);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+/* Hero img */
+.hero img {
+    width: 765px;
+    height: 764px;
+}
+
+/* ****************************** */
+/* ********** Services ********** */
+/* ****************************** */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 2em;
+}
+
+.services-headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Services cards  */
+
+.services-content{
+    display: flex;
+    gap: 2em;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 267px;
+    height: 314px;
+}
+
+.service-card p{
+    font-size: var(--para);
+    width: 181px;
+    text-align: center;
+}
+
+.services-content .weather > div,
+.services-content .flights > div,
+.services-content .events img,
+.services-content .customize svg{
+    width: 167px;
+    height: 153.33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-content .weather svg{
+    width: 92px;
+    height: 78px;
+}
+
+.services-content .flights svg{
+    width: 167px;
+    height: 153.33px;
+}
+
+.services-content .events img{
+    width: 67px;
+    height: 75px;
+}
+
+.services-content .customize svg{
+    width: 77px;
+    height: 66px;
+}

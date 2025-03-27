@@ -1,0 +1,33 @@
+:root{
+    --findout_btn: #f1a501;
+    --play_btn: #df6951;
+    --heading-xs: 18px;
+    --heading-sm: 20px;
+    --heading-md: 50px;
+    --heading-lg: 84px;
+    --heading_weight: 700;
+    --heading_weight_sm: 600;
+    --para: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* For all links */
+.link{
+    text-decoration: none;
+}
+
+h3{
+    font-size: var(--heading-md);
+}
+
+h4{
+    font-size: var(--heading-sm);
+}
+
+h5{
+    font-size: var(--heading-xs);
+}
