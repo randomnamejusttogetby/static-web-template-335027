@@ -2,9 +2,9 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 0 2em 0;
     gap: 3em;
     height: fit-content;
+    margin: 0 3em;
 }
 
 main > * {
@@ -55,6 +55,7 @@ nav {
 /* ****************************** */
 .hero {
     display: flex;
+    justify-content: center;
 }
 
 .hero-content {
@@ -78,6 +79,7 @@ nav {
     font-size: var(--heading-lg);
     font-weight: var(--heading_weight);
     line-height: 86px;
+    max-width: 545px;
 }
 
 .hero-text {
