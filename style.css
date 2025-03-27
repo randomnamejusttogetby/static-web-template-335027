@@ -3,7 +3,8 @@ main{
     flex-direction: column;
     position: relative;
     margin: 0 2em 0;
-    gap: 2em;
+    gap: 3em;
+    height: fit-content;
 }
 
 main > * {
@@ -25,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2em 0;
+    margin: 0 2em;
 }
 
 /* ****************************** */
@@ -95,8 +97,9 @@ nav {
     color: white;
     border: 0px transparent solid;
     background-color: var(--findout_btn);
-    padding: 1em 2em;
+    padding: 1em 1.7em;
     border-radius: 0.5em;
+    font-size: var(--heading-sm);
 }
 
 .hero-buttons .__play {
