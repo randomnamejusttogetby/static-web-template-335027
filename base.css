@@ -8,11 +8,13 @@
     --heading_weight: 700;
     --heading_weight_sm: 600;
     --para: 16px;
+    --card-para: #5E6282;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 
 /* For all links */
